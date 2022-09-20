@@ -13,7 +13,7 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
+		// TODO pølse
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
