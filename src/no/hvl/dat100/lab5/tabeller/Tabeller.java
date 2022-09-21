@@ -5,7 +5,7 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO B
+		// TODO A
 		
 		int i = 0;
 		int tall = 0;
