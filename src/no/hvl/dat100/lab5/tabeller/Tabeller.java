@@ -5,9 +5,18 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO Bolle
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
-
+		// TODO B
+		
+		int i = 0;
+		int tall = 0;
+		String tallTxt = "Tabell: " ;
+		
+		for (i = 0; i < tabell.length; i++) {
+			tall = tabell[i];
+			tallTxt += tall + " ";	
+		}	
+		System.out.println(tallTxt);	
+		
 	}
 
 	// b)
