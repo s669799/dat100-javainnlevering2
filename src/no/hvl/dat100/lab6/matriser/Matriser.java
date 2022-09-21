@@ -5,14 +5,14 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
+		// TODO Mateusz
 		throw new UnsupportedOperationException("skrivUt ikke implementert");
 	}
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
+		// TODO Severin
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
@@ -20,7 +20,7 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		// TODO
+		// TODO Dag Åsmund
 		throw new UnsupportedOperationException("skaler ikke implementert");
 	
 	}
@@ -28,14 +28,14 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		// TODO
+		// TODO Mateusz
 		throw new UnsupportedOperationException("erLik ikke implementert");
 	}
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO
+		// TODO Severin
 		throw new UnsupportedOperationException("speile ikke implementert");
 	
 	}
@@ -43,7 +43,7 @@ public class Matriser {
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
-		// TODO
+		// TODO Dag Åsmund
 		throw new UnsupportedOperationException("multipliser ikke implementert");
 	
 	}

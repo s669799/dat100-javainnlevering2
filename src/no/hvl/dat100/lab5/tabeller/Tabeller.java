@@ -5,7 +5,7 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO Bolle
+		// TODO Severin
 		throw new UnsupportedOperationException("skrivUt ikke implementert");
 
 	}
@@ -13,7 +13,7 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO pølse
+		// TODO Dag Åsmund
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
@@ -21,21 +21,21 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 
-		// TODO
+		// TODO Mateusz
 		throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
+		// TODO Severin
 		throw new UnsupportedOperationException("finnesTall ikke implementert");
 	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		// TODO
+		// TODO Dag Åsmund
 		throw new UnsupportedOperationException("posisjonTall ikke implementert");
 
 	}
@@ -43,7 +43,7 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
+		// TODO Mateusz
 		throw new UnsupportedOperationException("reverser ikke implementert");
 		
 	}
@@ -51,14 +51,14 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
+		// TODO Severin
 		throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
+		// TODO Dag Åsmund
 		throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
 }
