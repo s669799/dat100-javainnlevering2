@@ -37,8 +37,20 @@ public class Tabeller {
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
+		boolean finnes = false;
+		int i = 0;
+		
+		while (!finnes && i < tabell.length) {
+			if (tabell[i] == tall) {
+				finnes = true;
+			}
+			
+			i++;
+			
+		}
+		System.out.println(finnes);
+		return finnes;
+		
 	}
 
 	// e)
