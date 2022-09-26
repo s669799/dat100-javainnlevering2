@@ -9,13 +9,18 @@ public class Tabeller {
 		
 		int i = 0;
 		int tall = 0;
-		String tallTxt = "Tabell: " ;
-		
+		String tallTxt = "Tabell: ";
+
 		for (i = 0; i < tabell.length; i++) {
 			tall = tabell[i];
 			tallTxt += tall + " ";	
 		}	
 		System.out.println(tallTxt);
+			tallTxt += tall + " ";
+		}
+		
+		System.out.println(tallTxt);
+
 	}
 
 	// b)
@@ -32,7 +37,7 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 
-		// TODO Mateusz
+		// TODO
 		throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
@@ -41,6 +46,19 @@ public class Tabeller {
 
 		// TODO Severin
 		throw new UnsupportedOperationException("finnesTall ikke implementert");
+		boolean finnes = false;
+		int i = 0;
+
+		while (!finnes && i < tabell.length) {
+			if (tabell[i] == tall) {
+				finnes = true;
+			}
+			i++;
+		}
+		
+		System.out.println(finnes);
+		return finnes;
+
 	}
 
 	// e)
@@ -63,7 +81,7 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO Mateusz
+		// TODO
 		throw new UnsupportedOperationException("reverser ikke implementert");
 		
 	}
@@ -73,6 +91,20 @@ public class Tabeller {
 
 		// TODO Severin
 		throw new UnsupportedOperationException("erSortert ikke implementert");
+		boolean sortert = true;
+		int i = 0;
+		
+		while (sortert && i < tabell.length - 1) {
+			if (tabell[i] <= tabell[i+1]) {
+				i++;		
+			} else {
+				sortert = false;
+			}			
+		}
+		
+		System.out.println(sortert);
+		return sortert;
+		
 	}
 
 	// h)
