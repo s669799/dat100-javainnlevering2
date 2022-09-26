@@ -5,15 +5,26 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		// TODO Severin
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
-
+		// TODO A
+		
+		int i = 0;
+		int tall = 0;
+		String tallTxt = "Tabell: " ;
+		
+		for (i = 0; i < tabell.length; i++) {
+			tall = tabell[i];
+			tallTxt += tall + " ";	
+		}	
+		System.out.println(tallTxt);
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
 		// TODO Dag Åsmund
+		
+		System.out.println("[" + tabell[0] + ", " + tabell[1] + ", " + tabell[2] + "]");
+		
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
@@ -36,7 +47,16 @@ public class Tabeller {
 	public static int posisjonTall(int[] tabell, int tall) {
 
 		// TODO Dag Åsmund
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
+		boolean funnet = false;
+		int i = 0;
+		
+		while (!funnet && i < tabell.length) {
+			if (tabell[i] == tall)
+				funnet = true;
+			else
+				i++;
+		}
+		return tall;
 
 	}
 
@@ -59,6 +79,14 @@ public class Tabeller {
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		// TODO Dag Åsmund
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int nyLengde = tabell1.length + tabell2.length;
+		int[] nyTab = new int[nyLengde];
+		for (int i = 0; i < tabell1.length; i++) {
+			nyTab[i] = tabell1[i];
+		}
+		for (int j = 0; j < tabell2.length; j++) {
+			nyTab[tabell1.length + j] = tabell2[j];
+		}
+		return nyTab;
 	}
 }
