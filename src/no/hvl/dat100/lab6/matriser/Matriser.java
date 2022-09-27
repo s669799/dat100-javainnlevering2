@@ -46,7 +46,7 @@ public class Matriser {
 
 		// TODO Severin
 		throw new UnsupportedOperationException("speile ikke implementert");
-		erigj
+	//rger
 	}
 
 	// f)
