@@ -32,9 +32,30 @@ public class Tabeller {
 
 	// c)
 	public static int summer(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("summer ikke implementert");
+		// TODO Mateusz 
+		int sum = 0;
+		for(int i = 0; i < tabell.length; i++) {
+			int b = tabell[i];
+			sum += b;
+		}
+		System.out.println(sum);
+		
+		int i = 0;
+		sum = 0;
+		while(i < tabell.length) {
+			int b = tabell[i];
+			sum += b;
+			i++;
+		}
+		System.out.println(sum);
+		
+		
+		sum = 0;
+		for(int k : tabell) {
+			sum += k;
+		}
+		System.out.println(sum);
+		return sum;
 	}
 
 	// d)
@@ -76,8 +97,17 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+		// TODO Mateusz
+		int[] nytabell = new int[tabell.length];
+		int j = tabell.length;
+		for(int i = 0; i< tabell.length; i++) {
+			nytabell[j-1] = tabell[i];
+			j--;
+		}
+		for(int i = 0; i< nytabell.length; i++)
+			System.out.print(nytabell[i] + " ");
+		
+		return nytabell;
 		
 	}
 
