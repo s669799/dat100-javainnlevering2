@@ -19,18 +19,22 @@ public class Tabeller {
 			tallTxt += tall + " ";
 		}
 		
-		System.out.println(tallTxt);
-
-	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
 		// TODO Dag Åsmund
+		String s = "";
 		
-		System.out.println("[" + tabell[0] + ", " + tabell[1] + ", " + tabell[2] + "]");
-		
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		System.out.print("[");
+		for (int i = 0; i < tabell.length; i++) {
+			if (i < tabell.length - 1) {
+				System.out.print(tabell[i] + ",");
+			}
+			else {
+				System.out.print(tabell[i] + "]");
+			} 
+		} return s;
 		
 	}
 
@@ -45,7 +49,6 @@ public class Tabeller {
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO Severin
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
 		boolean finnes = false;
 		int i = 0;
 
@@ -73,8 +76,8 @@ public class Tabeller {
 				funnet = true;
 			else
 				i++;
-		}
-		return tall;
+		} System.out.print(tabell[i]);
+		return tabell[i];
 
 	}
 
@@ -90,7 +93,6 @@ public class Tabeller {
 	public static boolean erSortert(int[] tabell) {
 
 		// TODO Severin
-		throw new UnsupportedOperationException("erSortert ikke implementert");
 		boolean sortert = true;
 		int i = 0;
 		
