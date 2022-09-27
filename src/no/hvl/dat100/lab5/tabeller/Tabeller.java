@@ -16,11 +16,7 @@ public class Tabeller {
 			tallTxt += tall + " ";	
 		}	
 		System.out.println(tallTxt);
-			tallTxt += tall + " ";
-		}
-		
-		System.out.println(tallTxt);
-
+			
 	}
 
 	// b)
@@ -45,7 +41,6 @@ public class Tabeller {
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO Severin
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
 		boolean finnes = false;
 		int i = 0;
 
@@ -56,7 +51,7 @@ public class Tabeller {
 			i++;
 		}
 		
-		System.out.println(finnes);
+		System.out.println("Finnes: " + finnes);
 		return finnes;
 
 	}
@@ -90,7 +85,6 @@ public class Tabeller {
 	public static boolean erSortert(int[] tabell) {
 
 		// TODO Severin
-		throw new UnsupportedOperationException("erSortert ikke implementert");
 		boolean sortert = true;
 		int i = 0;
 		
@@ -102,7 +96,7 @@ public class Tabeller {
 			}			
 		}
 		
-		System.out.println(sortert);
+		System.out.println("Sortert: " + sortert);
 		return sortert;
 		
 	}
