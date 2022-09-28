@@ -16,17 +16,26 @@ public class Tabeller {
 			tallTxt += tall + " ";	
 		}	
 		System.out.println(tallTxt);
+<<<<<<< HEAD
 		
 		}
 		
+=======
+			
+	}
+>>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
 		// TODO Dag Åsmund
+<<<<<<< HEAD
 		System.out.println();
 		String s = "[" + tabell[0];
+=======
+>>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		
+<<<<<<< HEAD
 		for (int i = 1; i < tabell.length; i++) {
 			s += ", " + tabell[i];
 			
@@ -35,6 +44,11 @@ public class Tabeller {
 		System.out.print(s);
 		return s;
 		}
+=======
+		System.out.println("[" + tabell[0] + ", " + tabell[1] + ", " + tabell[2] + "]");
+		
+		throw new UnsupportedOperationException("tilStreng ikke implementert");
+>>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		
 	
 
@@ -92,11 +106,20 @@ public class Tabeller {
 		int pos = -1;
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall)
+<<<<<<< HEAD
 				pos = i;
 		}
 		System.out.print("Posisjon: " + pos);
 		System.out.println();
 		return pos;
+=======
+				funnet = true;
+			else
+				i++;
+		}
+		return tall;
+
+>>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 	}
 
 	// f)

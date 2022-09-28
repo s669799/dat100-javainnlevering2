@@ -6,9 +6,9 @@ public class Matriser {
 	public static void skrivUt(int[][] matrise) {
 
 		// TODO Mateusz
-		for (int i = 0; i < matrise.length; i++) {
-			for (int k = 0; k < matrise[i].length; k++) {
-				System.out.print(matrise[i][k] + " ");
+		for (int[] i : matrise) {
+			for(int j: i) {
+				System.out.print(j + " ");
 			}
 			System.out.println();
 		}
@@ -56,32 +56,42 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		// TODO Mateusz
-		if (a.length == b.length) {
-
-			for (int i = 0; i < a.length; i++) {
-				for (int k = 0; k < a[i].length; k++) {
-					if (a[i][k] != b[i][k]) {
-						return false;
-					} else {
-						//return true;
+		//TODO Mateusz
+		//check length
+		for(int i = 0; i< a.length; i++) {
+			 if(a.length == b.length) {
+				 if(a[i].length == b[i].length) { 
+				 }
+				 else return false;
+			 }
+			 else return false;
+		}
+		//check content
+		for (int i = 0; i < a.length; i++) {
+			for (int k = 0; k < a[i].length; k++) {
+				if (a[i][k] == b[i][k]) {
+				} 
+				else{
+					return false;
 					}
 				}
-			}
-		} else {
-			return false;
-		}
-		return false;
-
-		// throw new UnsupportedOperationException("erLik ikke implementert");
+			}return true;
 	}
 
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
 		// TODO Severin
-		throw new UnsupportedOperationException("speile ikke implementert");
-		// rger
+		int[][] speilet = new int[matrise[0].length][matrise.length];
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				speilet[j][i] = matrise[i][j];
+			}
+		}
+
+		tilStreng(speilet);
+
+		return speilet;
 	}
 
 	// f)
