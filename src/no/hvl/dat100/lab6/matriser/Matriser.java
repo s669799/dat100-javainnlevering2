@@ -51,7 +51,7 @@ public class Matriser {
 					if (a[i][k] != b[i][k]) {
 						return false;
 					} else {
-						//return true;
+						// return true;
 					}
 				}
 			}
@@ -67,8 +67,16 @@ public class Matriser {
 	public static int[][] speile(int[][] matrise) {
 
 		// TODO Severin
-		throw new UnsupportedOperationException("speile ikke implementert");
-		// rger
+		int[][] speilet = new int[matrise[0].length][matrise.length];
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				speilet[j][i] = matrise[i][j];
+			}
+		}
+
+		tilStreng(speilet);
+
+		return speilet;
 	}
 
 	// f)

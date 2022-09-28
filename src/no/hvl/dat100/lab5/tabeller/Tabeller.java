@@ -6,7 +6,6 @@ public class Tabeller {
 	public static void skrivUt(int[] tabell) {
 
 		// TODO A
-		
 		int i = 0;
 		int tall = 0;
 		String tallTxt = "Tabell: ";
