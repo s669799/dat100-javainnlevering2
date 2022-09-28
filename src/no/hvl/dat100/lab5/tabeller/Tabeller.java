@@ -16,32 +16,27 @@ public class Tabeller {
 			tallTxt += tall + " ";	
 		}	
 		System.out.println(tallTxt);
-<<<<<<< HEAD
-			tallTxt += tall + " ";
+		
 		}
 		
-=======
-			
-	}
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
 		// TODO Dag Åsmund
-		String s = "";
+		System.out.println();
+		String s = "[" + tabell[0];
 		
-		System.out.print("[");
-		for (int i = 0; i < tabell.length; i++) {
-			if (i < tabell.length - 1) {
-				System.out.print(tabell[i] + ",");
+		for (int i = 1; i < tabell.length; i++) {
+			s += ", " + tabell[i];
+			
 			}
-			else {
-				System.out.print(tabell[i] + "]");
-			} 
-		} return s;
+		s += "]" + "\n";
+		System.out.print(s);
+		return s;
+		}
 		
-	}
+	
 
 	// c)
 	public static int summer(int[] tabell) {
@@ -94,17 +89,14 @@ public class Tabeller {
 	public static int posisjonTall(int[] tabell, int tall) {
 
 		// TODO Dag Åsmund
-		boolean funnet = false;
-		int i = 0;
-		
-		while (!funnet && i < tabell.length) {
+		int pos = -1;
+		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall)
-				funnet = true;
-			else
-				i++;
-		} System.out.print(tabell[i]);
-		return tabell[i];
-
+				pos = i;
+		}
+		System.out.print("Posisjon: " + pos);
+		System.out.println();
+		return pos;
 	}
 
 	// f)
