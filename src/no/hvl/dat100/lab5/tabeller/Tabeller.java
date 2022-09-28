@@ -16,15 +16,10 @@ public class Tabeller {
 			tallTxt += tall + " ";	
 		}	
 		System.out.println(tallTxt);
-<<<<<<< HEAD
+
 			tallTxt += tall + " ";
 		}
 		
-=======
-			
-	}
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
-
 	// b)
 	public static String tilStreng(int[] tabell) {
 
