@@ -5,7 +5,6 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 
-		// TODO Mateusz
 		for (int[] i : matrise) {
 			for(int j: i) {
 				System.out.print(j + " ");
@@ -17,7 +16,6 @@ public class Matriser {
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO Severin
 		String matTxt = "";
 
 		for (int i = 0; i < matrise.length; i++) {
@@ -56,7 +54,6 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		//TODO Mateusz
 		//check length
 		for(int i = 0; i< a.length; i++) {
 			 if(a.length == b.length) {
@@ -81,7 +78,6 @@ public class Matriser {
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO Severin
 		int[][] speilet = new int[matrise[0].length][matrise.length];
 		for (int i = 0; i < matrise.length; i++) {
 			for (int j = 0; j < matrise[i].length; j++) {
@@ -97,7 +93,7 @@ public class Matriser {
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
-		// TODO Dag Åsmund
+		// TODO D
 		throw new UnsupportedOperationException("multipliser ikke implementert");
 
 	}
