@@ -4,51 +4,25 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-<<<<<<< HEAD
-		
-=======
 
-		// TODO A
-
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		int i = 0;
 		int tall = 0;
 		String tallTxt = "Tabell: ";
 
 		for (i = 0; i < tabell.length; i++) {
 			tall = tabell[i];
-<<<<<<< HEAD
-			tallTxt += tall + " ";	
-		}	
-		System.out.println(tallTxt);
-		
-=======
 			tallTxt += tall + " ";
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		}
-<<<<<<< HEAD
-		
-=======
 		System.out.println(tallTxt);
-
+		tallTxt += tall + " ";
 	}
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-<<<<<<< HEAD
-		
-=======
-		// TODO Dag Åsmund
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		System.out.println();
 		String s = "[" + tabell[0];
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		for (int i = 1; i < tabell.length; i++) {
 			s += ", " + tabell[i];
 
@@ -56,21 +30,11 @@ public class Tabeller {
 		s += "]" + "\n";
 		System.out.print(s);
 		return s;
-<<<<<<< HEAD
-		}
-		
-	
-=======
 	}
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 
 	// c)
 	public static int summer(int[] tabell) {
-<<<<<<< HEAD
 
-=======
-		// TODO Mateusz
->>>>>>> branch 'master' of https://github.com/s669799/dat100-javainnlevering2.git
 		int sum = 0;
 		for (int i = 0; i < tabell.length; i++) {
 			int b = tabell[i];
@@ -98,7 +62,6 @@ public class Tabeller {
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-
 		boolean finnes = false;
 		int i = 0;
 
@@ -117,7 +80,6 @@ public class Tabeller {
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		
 		int pos = -1;
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall)
@@ -166,7 +128,6 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		
 		int nyLengde = tabell1.length + tabell2.length;
 		int[] nyTab = new int[nyLengde];
 		for (int i = 0; i < tabell1.length; i++) {
