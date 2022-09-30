@@ -20,15 +20,16 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		System.out.println();
-		String s = "[" + tabell[0];
+		String s = "[";
 
-		for (int i = 1; i < tabell.length; i++) {
-			s += ", " + tabell[i];
-
+		if (tabell.length > 0) {
+			s += tabell[0];
+			for (int i = 1; i < tabell.length; i++) {
+				s += "," + tabell[i];
+			}
 		}
-		s += "]" + "\n";
-		System.out.print(s);
+		s += "]";
+		System.out.println(s);
 		return s;
 	}
 
@@ -102,6 +103,7 @@ public class Tabeller {
 		for (int i = 0; i < nytabell.length; i++)
 			System.out.print(nytabell[i] + " ");
 
+		System.out.println();
 		return nytabell;
 
 	}
